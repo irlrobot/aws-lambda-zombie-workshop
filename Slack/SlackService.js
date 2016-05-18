@@ -39,7 +39,7 @@ var processEvent = function(event, context) {
 
         // Object of options to designate where to send our request
         var post_options = {
-            host: 'INSERT YOUR API GATEWAY URL HERE EXCLUDING THE HTTPS://',
+            host: 'INSERT YOUR API GATEWAY FQDN HERE EXCLUDING THE HTTPS://',
             port: '443',
             path: '/ZombieWorkshopStage/zombie/message',
             method: 'POST',
