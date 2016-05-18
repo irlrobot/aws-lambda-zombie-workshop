@@ -467,6 +467,14 @@
       "Value": { "Ref": "GetMessagesFromDynamoDB" },
       "Description": "This Lambda function is used for getting chat messages from the Messages table."
     },
+    "WriteTalkersToDynamoDBLambdaFunction": {
+      "Value": { "Ref": "WriteTalkersToDynamoDB" },
+      "Description": "This Lambda function is used for writing talkers to the Talkers table."
+    },
+    "GetTalkersFromDynamoDBLambdaFunction": {
+      "Value": { "Ref": "GetTalkersFromDynamoDB" },
+      "Description": "This Lambda function is used for getting talkers from the Talkers table."
+    },
     "DynamoDBWriteMessagesARN": {
       "Value": { "Fn::GetAtt": ["WriteMessagesToDynamoDB", "Arn"] },
       "Description": "The ARN for the Write Messages Lambda function"
